@@ -1,0 +1,388 @@
+<html>
+<head>
+<style>
+* {box-sizing: border-box;}
+ul {list-style-type: none;}
+body {font-family: Verdana, sans-serif;}
+
+.month {
+  padding: 70px 25px;
+  width: 100%;
+  text-align: center;
+}
+
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: #666;
+  text-align: center;
+}
+
+.days {
+  padding: 10px 0;
+  margin: 0;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size:12px;
+  color: #777;
+}
+
+.days li .active {
+  padding: 5px;
+  background: #1abc9c;
+  color: white !important
+}
+
+</style>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body class="bg-light">
+    <nav class=" d-flex bg-white justify-content-between  border-bottom">
+         <div class="ml-2 my-4">
+          <span class="glyphicon glyphicon-align-left display-4"></span>
+          <input class="border border-white" placeholder="Search Projects....">
+         </div> 
+    <div class="mr-3  my-5">     
+    <a class="nav-link active d-inline" href="#">Home</a>
+    <a class="nav-link d-inline" href="#">About</a>
+    <a class="nav-link d-inline" href="#">About</a>
+    <a class="nav-link d-inline" href="#">About</a>
+   </div>
+</nav>
+<div class="bottom ">
+  <div class="container-fluid"> 
+    <div class="row m-0"> 
+         <div class="col-md-3 my-5">
+             <div class="card">
+               <div class="media p-5">
+                <i class="glyphicon glyphicon-shopping-cart text-primary align-self-center mr-5" style="font-size:40px;"></i>
+             <div class="media-body ">
+              <h3 class="mt-0">2.564</h3>
+             <p>Sales today</p>
+            </div>
+          </div>
+          </div>
+       </div>
+         <div class="col-md-3  my-5">
+               <div class="card">
+                  <div class="media p-5">
+                  <i class="glyphicon glyphicon-check text-warning align-self-center mr-5" style="font-size:40px;"></i>
+             <div class="media-body ">
+              <h3 class="mt-0">2.564</h3>
+             <p>Sales today</p>
+            </div>
+          </div>
+       </div> 
+        </div>
+          <div class="col-md-3  my-5">
+            <div class="card">
+                <div class="media p-5">
+                <i class="glyphicon glyphicon-usd text-success align-self-center mr-5" style="font-size:30px;"></i>
+             <div class="media-body ">
+              <h3 class="mt-0">2.564</h3>
+             <p>Sales today</p>
+            </div>
+          </div>
+       </div>
+       </div>
+         <div class="col-md-3  my-5">
+           <div class="card">
+              <div class="media p-5">
+                <i class="glyphicon glyphicon-certificate text-danger align-self-center mr-5" style="font-size:40px;"></i>
+             <div class="media-body ">
+              <h3 class="mt-0">2.564</h3>
+             <p>Sales today</p>
+            </div>
+          </div>
+        </div>
+</div>
+          <div class="col-md-8  mt-5"> 
+             <div class="card">
+                  <div class="card-body">
+                  <div class="d-flex justify-content-between border-bottom mx-4 my-4">
+                   <h4 class="d-inline">Total Revenue</h4>
+                    <span class="badge bg-primary" style="max-height: 20px;">Monthly</span>
+                   </div>
+                    <p>50000</p> 
+                    <p>50000</p> 
+                    <p>50000</p> 
+                    <p>50000</p> 
+                    <p>50000</p> 
+                    
+                    <p>50000</p> 
+                    <p>50000</p> 
+                    <p>50000</p> 
+                    <p>50000</p> 
+                    <p>50000</p> 
+                    
+                    <p>50000</p> 
+                    <p>50000</p> 
+                    <p>50000</p> 
+                    <p>50000</p> 
+                    <p>50000</p> 
+                </div>
+              </div>
+        </div>
+           <div class="col-md-4 mt-5">
+             <div class="card">
+               <div class="d-flex justify-content-between border-bottom mx-4 my-4">
+                   <h4 class="d-inline">Daily feed</h4>
+                    <span class="badge bg-primary" style="max-height: 20px;">Today</span>
+                   </div>
+               <div class="media p-4 border-bottom">
+                <img class="align-self-center img-circle" style="width: 45px;height: 50px;" src="https://images.unsplash.com/photo-1495231916356-a86217efff12?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80">
+             <div class="media-body ml-4">
+              <p class="font-weight-bold">Ashley Briggs started following Stacie </p>
+             <small>Today 7:51 pm</small>
+            </div>
+             </div>
+              <div class="media p-4 border-bottom">
+                <img class="align-top img-circle" style="width: 45px;height: 50px;" src="https://images.unsplash.com/photo-1495231916356-a86217efff12?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80">
+             <div class="media-body ml-4">
+              <p class="font-weight-bold">Ashley Briggs started following Stacie </p>
+             <small>Today 7:21 pm</small>
+                 <div class="border mt-5">Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing...</div>
+                </div>
+           </div>
+              <div class="media p-4 border-bottom">
+                <img class="align-self-center img-circle" style="width: 45px;height: 50px;" src="https://images.unsplash.com/photo-1495231916356-a86217efff12?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80">
+             <div class="media-body ml-4">
+              <p class="font-weight-bold">Ashley Briggs started following Stacie </p>
+             <small>Today 6:51 pm</small>
+            </div>
+          </div>
+        <button class="btn btn-primary my-5 mx-5">Load more</button>
+</div>
+</div>
+         <div class="col-md-4 mt-5">
+             <div class="card">
+                 <div class="d-flex justify-content-between border-bottom mx-4 my-4">
+                   <h4 class="d-inline">Calendar</h4>
+                    <span class="glyphicon glyphicon-option-horizontal"style="font-size: 25px;"></span>
+                   </div>
+                   <div class="month" style="height: 308px;">      
+  <ul>
+    <li class="prev">&#10094;</li>
+    <li class="next">&#10095;</li>
+    <li>
+      August<br>
+      <span style="font-size:18px">2017</span>
+    </li>
+  </ul>
+</div>
+
+<ul class="weekdays">
+  <li>Mo</li>
+  <li>Tu</li>
+  <li>We</li>
+  <li>Th</li>
+  <li>Fr</li>
+  <li>Sa</li>
+  <li>Su</li>
+</ul>
+
+<ul class="days">  
+  <li>1</li>
+  <li>2</li>
+  <li>3</li>
+  <li>4</li>
+  <li>5</li>
+  <li>6</li>
+  <li>7</li>
+  <li>8</li>
+  <li>9</li>
+  <li><span class="active">10</span></li>
+  <li>11</li>
+  <li>12</li>
+  <li>13</li>
+  <li>14</li>
+  <li>15</li>
+  <li>16</li>
+  <li>17</li>
+  <li>18</li>
+  <li>19</li>
+  <li>20</li>
+  <li>21</li>
+  <li>22</li>
+  <li>23</li>
+  <li>24</li>
+  <li>25</li>
+  <li>26</li>
+  <li>27</li>
+  <li>28</li>
+  <li>29</li>
+  <li>30</li>
+  <li>31</li>
+</ul>
+              </div>
+         </div>
+         <div class="col-md-4 mt-5">
+             <div class="card">
+               <div class="d-flex justify-content-between border-bottom  mx-4 my-4">
+                   <h4 class="d-inline">Weekly Sales</h4>
+                    <span class="glyphicon glyphicon-option-horizontal"style="font-size: 25px;"></span>
+                   </div>
+                  <img src="https://media.fooducate.com/comments/images/55704C88-F9D9-1281-488A-A48C298B7E38.jpeg" height="530px">
+              </div>
+         </div>
+          <div class="col-md-4 mt-5">
+             <div class="card">
+               <div class="d-flex justify-content-between border-bottom mx-4 my-4">
+                   <h4 class="d-inline">Appointments</h4>
+                    <span class="glyphicon glyphicon-option-horizontal"style="font-size: 25px;"></span>
+                   </div>
+
+     <div class="bg-light">
+      <h3 class="mx-5">You have a meeting today!</h3>
+    <p class="mx-5">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+    </div>
+  <div class="mx-5 my-5">  
+     <div class="d-flex w-100 justify-content-between ">
+      <h5>List p item heading</h5>
+      <small>3 days ago</small>
+    </div>
+    <p>Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+    <small>Donec id elit non mi porta.</small>
+    <div class="d-flex w-100 justify-content-between mt-5">
+      <h5>List group item heading</h5>
+      <small class="text-muted">3 days ago</small>
+    </div>
+    <p>Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+    <small class="text-muted">Donec id elit non mi porta.</small>
+    <div class="d-flex w-100 justify-content-between mt-5">
+      <h5>List group item heading</h5>
+      <small class="text-muted">3 days ago</small>
+    </div>
+    <p>Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+    <small class="text-muted">Donec id elit non mi porta.</small>
+  </div>
+</div>
+              </div>
+             <div class="col-md-8 mt-5"> 
+                 <div class="card">
+                   <div class="d-flex justify-content-between border-bottom mx-4 my-4">
+                   <h4 class="d-inline">Latest Projects</h4>
+                    <span class="glyphicon glyphicon-option-horizontal"style="font-size: 25px;"></span>
+                   </div>
+                       <table class="table table-striped table-condensed w-100">
+  <thead>
+    <tr>
+      <th scope="col" class="py-4">Name</th>
+      <th scope="col" class="py-4">Start Date</th>
+      <th scope="col" class="py-4">End Date</th>
+      <th scope="col" class="py-4">Status</th>
+      <th scope="col" class="py-4">Assignee</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="py-4">Project Apollo</th>
+      <td class="py-4">01/01/2018</td>
+      <td class="py-4">01/01/2018</td>
+      <td class="py-4"><span class="badge bg-success">Done</span></td>
+       <td class="py-4">Carl Jenkins</td>
+    </tr>
+    <tr>
+      <td class="py-4">Project Apollo</th>
+      <td class="py-4">01/01/2018</td>
+      <td class="py-4">01/01/2018</td>
+      <td class="py-4"><span class="badge bg-danger">Cancelled</span></td>
+       <td class="py-4">Carl Jenkins</td>
+    </tr>
+    <tr>
+      <td class="py-4">Project Apollo</th>
+      <td class="py-4">01/01/2018</td>
+      <td class="py-4">01/01/2018</td>
+      <td class="py-4"><span class="badge bg-success">Done</span></td>
+       <td class="py-4">Carl Jenkins</td>
+    </tr>
+    <tr>
+      <td class="py-4">Project Apollo</th>
+      <td class="py-4">01/01/2018</td>
+      <td class="py-4">01/01/2018</td>
+      <td class="py-4"><span class="badge bg-warning">In progress</span></td>
+       <td class="py-4">Carl Jenkins</td>
+    </tr>
+    <tr>
+      <td class="py-4">Project Apollo</th>
+      <td class="py-4">01/01/2018</td>
+      <td class="py-4">01/01/2018</td>
+      <td class="py-4"><span class="badge bg-success">Done</span></td>
+       <td class="py-4">Carl Jenkins</td>
+    </tr>
+   <tr>
+      <td class="py-4">Project Apollo</th>
+      <td class="py-4">01/01/2018</td>
+      <td class="py-4">01/01/2018</td>
+      <td class="py-4"><span class="badge bg-danger">Cancelled</span></td>
+       <td class="py-4">Carl Jenkins</td>
+    </tr>
+  </tbody>
+</table>
+                </div> 
+             </div>
+             <div class="col-md-4 mt-5 mb-5">  
+                     <div class="card">
+                       <div class="d-flex justify-content-between border-bottom mx-4 my-4">
+                   <h4 class="d-inline">Sales/Revenue</h4>
+                    <span class="glyphicon glyphicon-option-horizontal"style="font-size: 25px;"></span>
+                   </div>
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6xYuWaqokz54Bwn6Jlp2VQNFDvqs6STp_6oaThpPzgeb3R7WQlwDCFDfu" height= "385px">
+                 </div>
+           
+             </div>
+         </div>
+    </div>
+</div>
+</div>
+<div class="footer d-flex justify-content-between bg-white border-top" style="height: 10%;">
+    <div class="pt-5  text-muted">
+     <span>Support</span>
+     <span>Help center</span>
+     <span>Privacy</span>
+     <span>Terms oof service</span>
+     </div>
+     <div class="mt-5">
+     <span class="text-muted">&copy;2019-AppStack</span>
+  </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
